@@ -1,0 +1,94 @@
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+    include "us(basic)"
+
+    name[Group1]= "English (GoboKeys)";
+
+    // Map CAPS to Level 3 shift
+    //key <CAPS> {
+    //    type[Group1]="ONE_LEVEL",
+    //    symbols[Group1] = [ ISO_Level3_Shift, Multi_key ]
+    //};
+    //include "level3(modifier_mapping)"
+    include "level3(caps_switch)"
+
+    key <TLDE> {	[     grave,	asciitilde	 ]	};
+    key <AE01> {	[	  1,	    exclam,     onesuperior, 	onequarter	]	};
+    key <AE02> {	[	  2,	    at,         twosuperior,	onehalf	]	};
+    key <AE03> {	[	  3,	    numbersign, threesuperior,   threequarters	]	};
+    key <AE04> {	[	  4,	    dollar,     EuroSign,	sterling ]	};
+    key <AE05> {	[	  5,	    percent		]	};
+    key <AE06> {	[	  6,	    asciicircum	]	};
+    key <AE07> {	[	  7,	    ampersand	]	};
+    key <AE08> {	[	  8,	    asterisk	]	};
+    key <AE09> {	[	  9,	    parenleft	]	};
+    key <AE10> {	[	  0,	    parenright	]	};
+    key <AE11> {	[     minus,	underscore	]	};
+    key <AE12> {	[     equal,	plus		]	};
+
+    key <AD01> {	[	  q,	    Q 		]	};
+    key <AD02> {	[	  w,	    W		]	};
+    key <AD03> {	[	  e,    	E		]	};
+    key <AD04> {	[	  r,	    R		]	};
+    key <AD05> {	[	  t,    	T		]	};
+    key <AD06> {	[	  y,	    Y		]	};
+    key <AD07> {	[	  u,	    U		]	};
+    key <AD08> {	[	  i,	    I		]	};
+    key <AD09> {	[	  o,	    O		]	};
+    key <AD10> {	[	  p,	    P		]	};
+    key <AD11> {	[ bracketleft,	braceleft,  aring,  Aring	]	};
+    key <AD12> {	[ bracketright,	braceright, dead_diaeresis, dead_circumflex	]	};
+
+    key <AC01> {	[	  a,	    A 		]	};
+    key <AC02> {	[	  s,	    S		]	};
+    key <AC03> {	[	  d,	    D		]	};
+    key <AC04> {	[	  f,	    F		]	};
+    key <AC05> {	[	  g,	    G		]	};
+    key <AC06> {	[	  h,	    H		]	};
+    key <AC07> {	[	  j,	    J		]	};
+    key <AC08> {	[	  k,	    K		]	};
+    key <AC09> {	[	  l,	    L		]	};
+    key <AC10> {	[ semicolon,	colon,      oslash, Ooblique	]	};
+    key <AC11> {	[ apostrophe,	quotedbl,   ae,     AE	]	};
+    key <BKSL> {	[ backslash,    bar,    dead_acute,	dead_doubleacute ]	};
+
+    key <LSGT> {    [      less,    greater,      onehalf, threequarters]	};
+    key <AB01> {	[	  z,	    Z 		]	};
+    key <AB02> {	[	  x,	    X		]	};
+    key <AB03> {	[	  c,	    C		]	};
+    key <AB04> {	[	  v,	    V		]	};
+    key <AB05> {	[	  b,	    B		]	};
+    key <AB06> {	[	  n,	    N		]	};
+    key <AB07> {	[	  m,	    M		]	};
+    key <AB08> {	[     comma,	less		]	};
+    key <AB09> {	[    period,	greater		]	};
+    key <AB10> {	[     slash,	question	]	};
+};
+
+
+
+
+
+// 
+// Overview
+//
+// ┌─────┐
+// │ 2 4 │   2 = Shift,  4 = Level3 + Shift
+// │ 1 3 │   1 = Normal, 3 = Level3
+// └─────┘
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
+// │ ~ ~ │ ! ¼ │ @ ½ │ # ¾ │ $ £ │ %   │ ^   │ &   │ *   │ (   │ )   │ _   │ + ` ┃ ⌫ Back- ┃
+// │ `   │ 1 ¹ │ 2 ² │ 3 ³ │ 4 € │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │ -   │ = ' ┃  space  ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
+// ┃       ┃ Q   │ W   │ E   │ R   │ T   │ Y   │ U   │ I   │ O   │ P   │ { Å │ } ^ ┃ Enter ┃
+// ┃Tab ↹  ┃ q   │ w   │ e   │ r   │ t   │ y   │ u   │ i   │ o   │ p   │ [ å │ ] " ┃   ⏎   ┃
+// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
+// ┃        ┃ A   │ S § │ D   │ F   │ G   │ H   │ J   │ K   │ L   │ : Ø │ " Æ │ |   ┃      ┃
+// ┃Caps ⇬  ┃ a   │ s   │ d   │ f   │ g   │ h   │ j   │ k   │ l   │ ; ø │ ' æ │ \   ┃      ┃
+// ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
+// ┃       ┃ >   │ Z   │ X   │ C   │ V   │ B   │ N   │ M   │ <   │ >   │ ?   ┃             ┃
+// ┃Shift ⇧┃ <   │ z   │ x   │ c   │ v   │ b   │ n   │ m   │ ,   │ .   │ /   ┃Shift ⇧      ┃
+// ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
+// ┃       ┃       ┃       ┃ ␣                               ⍽ ┃       ┃       ┃       ┃
+// ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣           Space               ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
