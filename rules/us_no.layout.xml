@@ -1,0 +1,11 @@
+<layout>
+  <configItem>
+    <name>us_no</name>
+    <shortDescription>us_no</shortDescription>
+    <description>English (Gobokeys) - Gobo's Norwegian overlay</description>
+    <languageList>
+      <iso639Id>eng</iso639Id>
+      <iso639Id>nor</iso639Id>
+    </languageList>
+  </configItem>
+</layout>
