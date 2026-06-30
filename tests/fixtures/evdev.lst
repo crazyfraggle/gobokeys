@@ -1,0 +1,9 @@
+! model
+  pc105           Generic 105-key PC
+
+! layout
+  us              English (US)
+  no              Norwegian
+
+! variant
+  intl            us: English (US, intl., with dead keys)

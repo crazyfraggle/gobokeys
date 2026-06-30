@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>us</name>
+        <shortDescription>en</shortDescription>
+        <description>English (US)</description>
+      </configItem>
+    </layout>
+    <layout>
+      <configItem>
+        <name>no</name>
+        <shortDescription>no</shortDescription>
+        <description>Norwegian</description>
+      </configItem>
+    </layout>
+  </layoutList>
+</xkbConfigRegistry>
